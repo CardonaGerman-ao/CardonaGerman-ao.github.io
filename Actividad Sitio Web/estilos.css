@@ -1,3 +1,48 @@
-.titulo {
-    
+.menu {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+h1 {
+    color: #005f99;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.contenido {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.galeria img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid;
+    height: auto;
+}
+
+ul {
+    font-weight: bold; 
+}
+
+table {
+    border: 1px solid;
+    padding: 5px;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 8px;
 }
