@@ -1,0 +1,23 @@
+body {
+    background-color: yellow;
+}
+
+h1 {
+    color: red;
+    background-color: black;
+}
+
+h2 {
+    color: red;
+    background-color: black;
+}
+
+ul {
+    color: black;
+    background-color: red;
+}
+
+a {
+    color: black;
+    background-color: red;
+}
