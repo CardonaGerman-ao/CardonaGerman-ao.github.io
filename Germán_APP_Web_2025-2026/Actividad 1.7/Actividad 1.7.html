@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table,
+        td,
+        th {
+            text-align: center;
+            border-color: black;
+            border: 1px solid;
+            padding: 20px;
+            border-collapse: collapse;
+        }
+        
+        td {
+            border-color: black;
+            border: 1px solid;
+            text-align:center;
+        }
+
+        .horario {
+            background-color: bisque;
+        }
+
+        .ipo {
+            background-color: orange;
+        }
+
+        .proyecto {
+            background-color: chocolate;
+        }
+
+        .redes {
+            background-color: blue;
+        }
+
+        .so {
+            background-color:aquamarine;
+        }
+
+        .web {
+            background-color: red;
+        }
+
+        .seguridad {
+            background-color: green;
+        }
+
+        .programación {
+            background-color: peru;
+        }
+
+        .sostenibilidad {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="horario">
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td class="horario">15:05 a 16:00</td>
+            <td class="ipo">IPO 2</td>
+            <td class="ipo">IPO 2</td>
+            <td class="proyecto">Proyecto</td>
+            <td rowspan="3" class="web">Aplicaciones Web</td>
+            <td rowspan="2" class="so">SO</td>
+        </tr>
+        <tr>
+            <td class="horario">16:00 a 16:55</td>
+            <td rowspan="2" class="redes">Redes</td>
+            <td rowspan="2" class="so">SO</td>
+            <td rowspan="2" class="redes">Redes</td>
+        </tr>
+        <tr>
+            <td class="horario">16:55 a 17:50</td>
+            <td class="redes">Redes</td>
+        </tr>
+        <tr>
+            <td class="horario">17:50 a 18:15</td>
+            <td colspan="5" class="horario">Patio</td>
+        </tr>
+        <tr>
+            <td class="horario">18:15 a 19:10</td>
+            <td class="redes">Redes</td>
+            <td class="so">SO</td>
+            <td rowspan="2" class="programación">Programación</td>
+            <td rowspan="3" class="seguridad">Seguridad Informática</td>
+            <td class="redes">Redes</td>
+        </tr>
+        <tr>
+            <td class="horario">19:10 a 20:05</td>
+            <td rowspan="2" class="so">SO</td>
+            <td rowspan="2" class="seguridad">Seguridad Informática</td>
+            <td rowspan="2" class="web">Aplicaciones Web</td>
+        </tr>
+        <tr>
+            <td class="horario">20:05 a 21:00</td>
+            <td class="sostenibilidad">Sostenibilidad</td>
+        </tr>
+    </table>
+</body>
+</html>
