@@ -1,0 +1,32 @@
+body {
+    background-color: black
+}
+
+th {
+    color: red;
+}
+
+td {
+    color: red
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:focus {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: orange;
+}
