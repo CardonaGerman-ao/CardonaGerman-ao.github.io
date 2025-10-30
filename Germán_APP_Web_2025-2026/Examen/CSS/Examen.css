@@ -1,0 +1,35 @@
+body {
+}
+
+.cabecera {
+    text-align: center;
+    border: 2px solid; color: red;
+    margin: 10px;
+    background-color: black;
+}
+
+.cabecera a {
+    color: red;
+    text-decoration: none;
+    margin: 50px;
+}
+
+.ejercicios a {
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid red;
+    background-color: black;
+    color: red;
+    text-align: center;
+    margin: 10px; 
+}
+
+.ejercicios {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        }
