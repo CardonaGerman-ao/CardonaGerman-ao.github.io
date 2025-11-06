@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <body>
+    <div><h1>Formulario</h1></div>
+
+    <form action="#">
+        <div class="contenedor1">
+            <label for="nombre">Nombre y Apellidos</label>
+            <label for="asterisco" class="asterisco">*</label>
+            <br><br>
+            <input type="text" placeholder="Nombre">
+            <label for="nombre">Nombre</label>
+            <br><br>
+            <input type="text" placeholder="Primer apellido">
+            <label for="apellido">Primer apellido</label>
+            <br><br>
+            <input type="text" placeholder="Segundo apellido">
+            <label for="apellido2">Segundo apellido</label>
+        </div>
+        <div class="contenedor2">
+            <label>Dirección</label>
+            <label class="asterisco">*</label>
+            <br><br>
+            <input type="text" placeholder="Calle, número, piso, puerta">
+            <label>Calle, número, piso, puerta</label>
+            <br><br>
+            <input type="text" placeholder="Código postal">
+            <label>Código postal</label>
+            <br><br>
+            <input type="text" placeholder="Municipio">
+            <label>Municipio</label>
+            <br><br>
+            <div class="fila">
+                <div class="columna">
+                    <select>
+                        <option value="">Provincia</option>
+                    </select>
+                    <label>Provincia</label>
+                </div>
+                <div class="columna">
+                    <select>
+                        <option value="">País</option>
+                    </select>
+                    <label>País</label>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor3">
+            <label>Email</label>
+            <label class="asterisco">*</label>
+            <br><br>
+            <input type="email" placeholder="ejemplo@correo.com">
+            <label>Correo electrónico</label>
+        </div>
+        <div class="contenedor4">
+            <label>Teléfono</label>
+            <label class="asterisco">*</label>
+            <br><br>
+            <div class="fila">
+                <div class="columna">
+                    <input type="tel" placeholder="Fijo">
+                    <label>Fijo</label>
+                </div>
+                <div class="columna">
+                    <input type="tel" placeholder="Móvil">
+                    <label>Móvil</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
