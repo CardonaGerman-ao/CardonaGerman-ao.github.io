@@ -1,0 +1,7 @@
+list.append()
+list.clear()
+list.count()
+list.extend()
+list.insert()
+list.remove()
+list.reverse()

@@ -10,3 +10,5 @@ print("El resultado de numeroentero * 2 es:", numeroenteropordos)
 numerodecimal=float(input("Introduce un número decimal:"))
 numerodecimalpordos=numerodecimal * 2
 print("El resultado de numerodecimal * 2 es:", numerodecimalpordos)
+
+
