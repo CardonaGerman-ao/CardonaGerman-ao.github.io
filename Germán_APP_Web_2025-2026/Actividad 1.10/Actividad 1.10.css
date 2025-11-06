@@ -1,0 +1,28 @@
+body {
+    background-color: #819199;
+}
+
+h1 {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+form {
+    color: white;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+input {
+    background-color: grey;
+    color: white
+}
+
+.asterisco {
+    color: red;
+}

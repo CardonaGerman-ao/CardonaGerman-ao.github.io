@@ -1,0 +1,21 @@
+body {
+    background-color: #819199;
+}
+
+h1 {
+    color: white;
+    background-color: grey;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.asterisco {
+    color: red;
+}
+
+.contenedor1 {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 12px;
+}
