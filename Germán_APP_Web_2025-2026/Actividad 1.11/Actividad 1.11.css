@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: cyan;
+  background-color: black;
   color: #000;
   margin: 0;
   padding: 0;
@@ -23,6 +23,10 @@ h1 {
 h2 {
   font-size: 1.1em;
   margin: 15px 0 8px 0;
+}
+
+.email {
+  margin-top: 65px
 }
 
 .requerido {

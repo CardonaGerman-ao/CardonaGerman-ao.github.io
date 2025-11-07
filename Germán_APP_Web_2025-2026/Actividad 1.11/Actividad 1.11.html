@@ -14,19 +14,19 @@
       <div class="fila">
         <div class="columna">
           <h2>Nombre y apellidos <span class="requerido">*</span></h2>
-          <input type="text" name="nombre" placeholder="Nombre">
-          <input type="text" name="primer-apellido" placeholder="Primer apellido">
-          <input type="text" name="segundo-apellido" placeholder="Segundo apellido">
+          <input type="text" name="nombre" required placeholder="Nombre">
+          <input type="text" name="primer-apellido" required placeholder="Primer apellido">
+          <input type="text" name="segundo-apellido" required placeholder="Segundo apellido">
 
-          <h2>Email <span class="requerido">*</span></h2>
-          <input type="email" name="email" placeholder="correo@ejemplo.com">
+          <h2 class="email">Email <span class="requerido">*</span></h2>
+          <input type="email" name="email" required placeholder="correo@ejemplo.com">
         </div>
 
         <div class="columna">
           <h2>Dirección <span class="requerido">*</span></h2>
-          <input type="text" name="direccion" placeholder="Calle, número, piso, puerta">
-          <input type="text" name="codigo-postal" placeholder="Código postal">
-          <input type="text" name="municipio" placeholder="Municipio">
+          <input type="text" name="direccion" required placeholder="Calle, número, piso, puerta">
+          <input type="text" name="codigo-postal" required placeholder="Código postal">
+          <input type="text" name="municipio" required placeholder="Municipio">
 
           <div class="fila-select">
             <select name="provincia">
@@ -45,7 +45,7 @@
           <h2>Teléfono <span class="requerido">*</span></h2>
           <div class="fila-telefono">
             <input type="tel" name="telefono-fijo" placeholder="Fijo">
-            <input type="tel" name="telefono-movil" placeholder="Móvil">
+            <input type="tel" name="telefono-movil" required placeholder="Móvil">
           </div>
         </div>
       </div>
