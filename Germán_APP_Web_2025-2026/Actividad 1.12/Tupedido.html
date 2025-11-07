@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu pedido</title>
+    <link rel="stylesheet" href="Actividad 1.12.css">
+</head>
+<body>
+    <h1>Pedido de Pizza</h1>
+    <div class="inicio">
+        <a href="http://127.0.0.1:3000/Germán_APP_Web_2025-2026/Actividad 1.12/Inicio.html?serverWindowId=f4c9beaf-224f-476b-b8c0-2c5c823c3fe6">Inicio</a>
+        <a href="http://127.0.0.1:3000/Germán_APP_Web_2025-2026/Actividad 1.12/Tupedido.html?serverWindowId=f268d54a-76d0-42f9-a99f-50073cd0f2ad">Tu pedido</a>
+    </div>
+        <form action="#">
+            <div>
+                <label for="ingredientes">Ingredientes</label>
+                <br>
+                <br>
+                <input type="checkbox" name="ingredientes" id="queso">
+                <label for="queso">Queso</label>
+                <br>
+                <input type="checkbox" name="ingredientes" id="pimiento">
+                <label for="pimiento">Pimiento</label>
+                <br>
+                <input type="checkbox" name="ingredientes" id="cebolla">
+                <label for="cebolla">Cebolla</label>
+                <br>
+                <br>
+                <label for="tamaño">Tamaño</label>
+                <br>
+                <br>
+                <input type="radio" name="tamaños" id="pequeña">
+                <label for="pequeña">Pequeña</label>
+                <br>
+                <input type="radio" name="tamaños" id="mediana">
+                <label for="mediana">Mediana</label>
+                <br>
+                <input type="radio" name="tamaños" id="grande">
+                <label for="grande">Grande</label>
+            </div>
+            <br>
+            <br>
+            <div>
+               <label for="nombre">Nombre:</label>
+               <input type="text" required placeholder="David">
+               <br>
+               <label for="dirección">Dirección:</label>
+               <input type="text" required placeholder="Calle, número, piso, puerta">
+               <br>
+               <label for="teléfono">Teléfono:</label>
+               <input type="number" required placeholder="+34 638 85 32 17">
+               <br>
+               <label for="instrucciones">Instrucciones especiales</label>
+               <br>
+               <input type="text" placeholder="Pon aquí instrucciones">
+            </div>
+            <br>
+            <div>
+                <select name="efectivo">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+</body>
+</html>

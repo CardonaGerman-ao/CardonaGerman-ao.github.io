@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: Red;
+    text-align: center;
+}
+
+.inicio {
+    color: red;
+    border: 2px solid;
+    margin: 20px
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:focus {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: orange;
+}
+
+form {
+    color: white;
+    background-color: grey;
+    margin: 20px
+}
