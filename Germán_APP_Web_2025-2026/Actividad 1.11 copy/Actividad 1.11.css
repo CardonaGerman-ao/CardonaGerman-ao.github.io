@@ -1,65 +1,82 @@
 body {
-            background-color: #819199;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
+  font-family: Arial, sans-serif;
+  background-color: cyan;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
 
-        h1 {
-            color: white;
-            background-color: grey;
-            text-align: center;
-            border: 2px solid black;
-            border-radius: 15px;
-            padding: 10px;
-        }
+.contenedor-formulario {
+  width: 85%;
+  max-width: 950px;
+  margin: 40px auto;
+  border: 1px solid #000;
+  padding: 30px 40px;
+  background-color: grey;
+}
 
-        .asterisco {
-            color: red;
-        }
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-        .contenedor1, .contenedor2, .contenedor3, .contenedor4 {
-            border: 2px solid black;
-            border-radius: 12px;
-            padding: 15px;
-            background-color: #f8f8f8;
-            margin-bottom: 20px;
-        }
+h2 {
+  font-size: 1.1em;
+  margin: 15px 0 8px 0;
+}
 
-        label {
-            font-weight: bold;
-        }
+.requerido {
+  color: red;
+}
 
-        input, select {
-            width: 100%;
-            padding: 6px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border-radius: 6px;
-            border: 1px solid #555;
-            box-sizing: border-box;
-        }
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
 
-        .fila {
-            display: flex;
-            gap: 15px;
-        }
+.columna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-        .columna {
-            flex: 1;
-        }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
 
-        button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: grey;
-            color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+.fila-select {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-        button:hover {
-            background-color: #555;
-        }
+.fila-telefono {
+  display: flex;
+  gap: 10px;
+}
+
+.contenedor-boton {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.boton-enviar {
+  padding: 8px 20px;
+  border: 1px solid #999;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  background-color: #ddd;
+}
+
