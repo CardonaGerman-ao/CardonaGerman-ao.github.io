@@ -3,14 +3,19 @@ body {
 }
 
 h1 {
-    color: Red;
+    color: #1d4ed8;
     text-align: center;
 }
 
+fieldset {
+      border: 1px solid #000;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
 .inicio {
-    color: red;
-    border: 2px solid;
-    margin: 20px
+    color: white;
+    margin: 20px;
 }
 
 a {
@@ -20,7 +25,7 @@ a {
 }
 
 a:link {
-    color: red;
+    color: #3b82f6;
     text-decoration: none;
 }
 
@@ -44,4 +49,65 @@ form {
     color: white;
     background-color: grey;
     margin: 20px
+}
+
+.pizzas {
+    border: 2px solid white
+}
+
+.menu-pizzas {
+  width: min(1000px, 96%);
+  margin: 24px auto 40px;
+  border-collapse: separate;
+  border-spacing: 16px;
+}
+
+.menu-pizzas caption {
+  caption-side: top;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: .5px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.menu-pizzas td {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 18px 18px 14px;
+  vertical-align: top;
+  box-shadow: 0 6px 18px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
+}
+
+.menu-pizzas td:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 24px rgba(0,0,0,.45), 0 0 0 3px rgba(59,130,246,.15);
+}
+
+.pizza h3 {
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.ingredientes {
+  margin: 0 0 12px 0;
+  padding-left: 18px;
+  color: #d8d8d8;
+}
+
+.ingredientes li {
+  margin: 2px 0;
+}
+
+.precio {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  background: linear-gradient(180deg, #3b82f6, #1d4ed8);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  letter-spacing: .3px;
 }

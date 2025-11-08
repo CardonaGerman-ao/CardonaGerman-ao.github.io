@@ -17,6 +17,8 @@
                 <label for="ingredientes">Ingredientes</label>
                 <br>
                 <br>
+                <fieldset>
+                <legend>La pizza</legend>
                 <input type="checkbox" name="ingredientes" id="queso">
                 <label for="queso">Queso</label>
                 <br>
@@ -38,11 +40,14 @@
                 <br>
                 <input type="radio" name="tamaños" id="grande">
                 <label for="grande">Grande</label>
+                </fieldset>
             </div>
             <br>
             <br>
             <div>
-               <label for="nombre">Nombre:</label>
+               <fieldset>
+                <legend>Datos de entrega</legend>
+                <label for="nombre">Nombre:</label>
                <input type="text" required placeholder="David">
                <br>
                <label for="dirección">Dirección:</label>
@@ -53,16 +58,19 @@
                <br>
                <label for="instrucciones">Instrucciones especiales</label>
                <br>
-               <input type="text" placeholder="Pon aquí instrucciones">
+               <textarea rows="10" cols="40"></textarea>
+               </fieldset>
             </div>
             <br>
             <div>
-                <select name="efectivo">
+                <fieldset>
+                    <legend>Método de pago</legend>
+                    <select name="efectivo">
                     <option value="efectivo">Efectivo</option>
                     <option value="tarjeta">Tarjeta</option>
                 </select>
+                </fieldset>
             </div>
-            <br>
             <input type="submit">
         </form>
 </body>
