@@ -1,0 +1,60 @@
+body{
+    background-color: aliceblue;
+}
+.cabecera {
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+.cabecera a{
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+}
+
+.imagen1 {
+    text-align: center;
+    margin: 30px;
+    padding-left: 100px;
+}
+
+.imagen2 {
+    text-align: center;
+    margin: 30px;
+    padding-left: 100px;
+}
+
+.imagen3 {
+    text-align: center;
+    margin: 30px;
+    padding-left: 100px;
+}
+
+.libro1 {
+    text-align: center;
+    padding-left: 100px;
+}
+
+.libro2 {
+    text-align: center;
+    padding-left: 200px;
+}
+
+.libro3 {
+    text-align: center;
+    padding-left: 200px;
+}
+
+.formulario {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align:;
+    margin: 50px;
+    padding: 10px;
+}
+
+.formulario [sumbit]{
+    text-align: center;
+}
