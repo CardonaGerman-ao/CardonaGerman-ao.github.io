@@ -140,3 +140,49 @@ input, textarea {
   text-decoration: none;
   margin: 0 10px;
 }
+
+/*   DISEÑO RESPONSIVE PARA MÓVIL */
+
+@media (max-width: 768px) {
+
+.menu-superior {
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.titulo, h2, h3, h4 {
+  font-size: 22px;
+  padding: 15px;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+}
+
+.imagenes {
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.imagenes img {
+  width: 90%;
+  max-width: 280px;
+  height: auto;
+}
+
+.form-section {
+  width: 95%;
+  padding: 20px;
+}
+
+input, textarea {
+  font-size: 14px;
+}
+
+.menu-inferior {
+  font-size: 14px;
+}
+}

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Realizar Pedido</title>
+  <title>Pedido</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/Actividad 1.13.css">
 </head>
@@ -10,36 +10,77 @@
 <header>
   <h1 class="titulo">Realizar Pedido</h1>
   <nav class="menu-superior">
-    <a href="Actividad 1.13.html">Inicio</a>
+    <a href="Inicio.html">Inicio</a>
     <a href="Contacto.html">Contacta</a>
+    <a href="Archivos/Carta.pdf" download="">Descarga la carta</a>
   </nav>
 </header>
 <section class="form-section">
   <form>
-    <label>Nombre:</label>
-    <input type="text" required>
-    <br>
-    <br>
-    <label>Producto:</label>
-    <br>
-    <input type="text" required>
-    <br>
-    <br>
-    <label>Cantidad:</label>
-    <br>
-    <input type="number" min="1" required>
-    <br>
-    <br>
-    <label>Fecha:</label>
-    <input type="date">
-    <br>
-    <br>
-    <label>Hora:</label>
-    <input type="time">
-    <br>
-    <br>
-    <button type="submit">Enviar Pedido</button>
-  </form>
+  <label>Nombre:</label>
+  <input type="text" required>
+  <br><br>
+  <label>Dirección:</label>
+  <input type="text" placeholder="Calle, número, piso..." required>
+  <br><br>
+  <label>Tipo de Pizza:</label>
+  <input type="text" placeholder="Ej: Pepperoni, Barbacoa..." required>
+  <br><br>
+  <label>Tamaño:</label>
+  <select required>
+    <option value="">Selecciona una opción</option>
+    <option>Pequeña (20 cm)</option>
+    <option>Mediana (30 cm)</option>
+    <option>Familiar (40 cm)</option>
+  </select>
+  <br><br>
+  <label>Tipo de Masa:</label>
+  <select required>
+    <option value="">Selecciona una opción</option>
+    <option>Clásica</option>
+    <option>Fina y crujiente</option>
+    <option>Pan Pizza (gruesa)</option>
+  </select>
+  <br><br>
+  <label>Ingrediente adicional:</label>
+  <select required>
+    <option value="">Selecciona un ingrediente</option>
+    <option>Extra queso</option>
+    <option>Jamón</option>
+    <option>Bacon</option>
+    <option>Champiñones</option>
+    <option>Cebolla</option>
+    <option>Peperoni extra</option>
+  </select>
+  <br><br>
+  <label>Ingrediente adicional:</label>
+  <select required>
+    <option value="">Selecciona un ingrediente</option>
+    <option>Extra queso</option>
+    <option>Jamón</option>
+    <option>Bacon</option>
+    <option>Champiñones</option>
+    <option>Cebolla</option>
+    <option>Peperoni extra</option>
+  </select>
+  <br><br>
+  <label>Especias:</label>
+  <select required>
+    <option value="">Selecciona una especia</option>
+    <option>Orégano</option>
+    <option>Albahaca</option>
+    <option>Ajo en polvo</option>
+    <option>Pimienta negra</option>
+  </select>
+  <br><br>
+  <label>Método de pago:</label>
+<select required>
+  <option value="">Selecciona una opción</option>
+  <option>Efectivo</option>
+  <option>Tarjeta</option>
+</select>
+<br><br>
+<button type="submit">Enviar Pedido</button>
 </section>
 <footer class="menu-inferior">
   <a href="#">Aviso Legal</a>
