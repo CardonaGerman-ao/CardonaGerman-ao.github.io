@@ -28,7 +28,7 @@ print(f'{5 > 5}')
 print('Ejecutamos la comparación lógiga: "4 > 5", resultando:')
 print(f'{4 > 5}')
 # print('Ejecutamos la comparación lógiga: "4 > \'4\'", resultando:')
-# print(f'{4 > "4"}') -> Nos va a dar una exceción!
+# print(f'{4 > "4"}') -> Nos va a dar una excepción!
 print('Ejecutamos la comparación lógiga: "4 > len(\"4\")", resultando:')
 print(f'{4 > len("4")}')
 
@@ -40,7 +40,7 @@ print(f'{5 < 5}')
 print('Ejecutamos la comparación lógiga: "4 < 5", resultando:')
 print(f'{4 < 5}')
 # print('Ejecutamos la comparación lógiga: "4 < \'4\'", resultando:')
-# print(f'{4 < "4"}') -> Nos va a dar una exceción!
+# print(f'{4 < "4"}') -> Nos va a dar una excepción!
 print('Ejecutamos la comparación lógiga: "4 < len(\"4\")", resultando:')
 print(f'{4 < len("4")}')
 
@@ -52,7 +52,7 @@ print(f'{5 >= 5}')
 print('Ejecutamos la comparación lógiga: "4 >= 5", resultando:')
 print(f'{4 >= 5}')
 # print('Ejecutamos la comparación lógiga: "4 >= \'4\'", resultando:')
-# print(f'{4 >= "4"}') -> Nos va a dar una exceción!
+# print(f'{4 >= "4"}') -> Nos va a dar una excepción!
 print('Ejecutamos la comparación lógiga: "4 >= len(\"4\")", resultando:')
 print(f'{4 >= len("4")}')
 
@@ -64,7 +64,7 @@ print(f'{5 <= 5}')
 print('Ejecutamos la comparación lógiga: "4 <= 5", resultando:')
 print(f'{4 <= 5}')
 # print('Ejecutamos la comparación lógiga: "4 <= \'4\'", resultando:')
-# print(f'{4 <= "4"}') -> Nos va a dar una exceción!
+# print(f'{4 <= "4"}') -> Nos va a dar una excepción!
 print('Ejecutamos la comparación lógiga: "4 <= len(\"4\")", resultando:')
 print(f'{4 <= len("4")}')
 
