@@ -86,7 +86,7 @@ else:
 # 7 - Crea un programa que assigni una qualificació a una nota numèrica (A, B, C, D o F) en funció d’una nota numérica donada per teclat
 # (A = entre 9 i 10 -ambdós inclosos-, B = entre 7 i 9 -incloent el 7 però no el 9- , C = entre 5 i 7 -incloent el 5 però no el 7-, F = menys de 5).
 
-nota = float(input("Introduce la nota (0-10): "))
+nota = float(input("Introduce la nota: "))
 if nota >= 9 and nota <= 10:
     print("A")
 elif nota >= 7 and nota < 9:
