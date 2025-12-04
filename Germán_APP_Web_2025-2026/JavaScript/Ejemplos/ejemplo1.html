@@ -8,27 +8,30 @@
 <body>
     
 <p>Ingresa un número entre 18 y 99:</p>
-<!-- Aquí, 'this' se refiere al propio elemento 'input' -->
-    <input type="number" name="age" placeholder="Edad" size="3" onChange="validate(this, 18, 99, 'pelotas');" />
-        
-    <script>
+
+<input type="number" 
+       name="age" 
+       placeholder="Edad" 
+       size="3" 
+       onchange="validate(this, 18, 99, 'ahhhhhhhh');" />
+
+<script>
 function validate(obj, lowval, hival, message) {
-  // 'obj' es el objeto que recibe la función.
   if (obj.value < lowval || obj.value > hival) {
-    console.log("¡Valor no válido!" ${message} + ${obj.value});
+    console.log(`¡Valor no! ${message} ${obj.value}`);
   } else {
-    console.log("¡Ricardo no viene!" ${message} + ${obj.value});
+    console.log(`¡Ricardo se escapa! ${message} ${obj.value}`);
   }
 }
 
-debugger
+debugger;
 
 // 'new Date()' crea una nueva instancia del objeto 'Date'
 const hoy = new Date();
 
 // 'new Array()' crea una nueva instancia de 'Array'
 const miArray = new Array('a', 'b', 'c');
-        
-    </script>
+</script>
+
 </body>
 </html>
