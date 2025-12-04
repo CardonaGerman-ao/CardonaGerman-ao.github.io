@@ -1,3 +1,4 @@
+/* Quitamos márgenes y paddings y ponemos la fuente general */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ html, body {
   flex-direction: column;
 }
 
+/* Título principal en verde y centrado */
 .titulo {
   background: green;
   color: white;
@@ -15,7 +17,8 @@ html, body {
   margin: 0;
 }
 
-h2 {
+/* Encabezados con fondo rojo y centrados */
+h2, h3, h4 {
   background: red;
   color: white;
   text-align: center;
@@ -23,55 +26,41 @@ h2 {
   margin: 0;
 }
 
-h3 {
-  background: red;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-}
-
-h4 {
-  background: red;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-}
-
+/* Centrar el logo */
 .logo {
   display: flex;
   justify-content: center;
 }
 
+/* Fondo rojo para la sección de galería */
 .galeria {
   background-color: red;
 }
 
+/* Contenedor de imágenes con espacio entre ellas */
 .imagenes {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-.imagenes {
   text-align: center;
 }
 
+/* Tamaño y estilo de las imágenes */
 .imagenes img {
-  display: block;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border: 5px solid green;
 }
 
+/* Texto debajo de las imágenes */
 .imagenes p {
   color: green;
   margin-top: 5px;
 }
 
+/* Menú superior horizontal */
 .menu-superior {
   display: flex;
   justify-content: center;
@@ -80,12 +69,14 @@ h4 {
   padding: 12px;
 }
 
+/* Estilo de los enlaces del menú */
 .menu-superior a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Cuadro de descarga */
 .descarga {
   border: 2px solid red;
   background-color: green;
@@ -94,15 +85,18 @@ h4 {
   text-align: center;
 }
 
+/* Colores de los enlaces según el estado */
 a:link { color: white; }
 a:visited { color: red; }
 a:hover { color: yellow; text-decoration: underline; }
 a:active { color: blue; }
 
+/* Sombra al pasar el ratón por encima */
 .service-item:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Contenedor del formulario */
 .form-section {
   width: 90%;
   max-width: 500px;
@@ -114,6 +108,7 @@ a:active { color: blue; }
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Estilo de inputs y textarea */
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -123,10 +118,12 @@ input, textarea {
   font-size: 15px;
 }
 
+/* Hover del botón */
 .btn:hover {
   background: #1558b0;
 }
 
+/* Pie de página */
 .menu-inferior {
   margin-top: auto;
   background: #222;
@@ -135,54 +132,62 @@ input, textarea {
   text-align: center;
 }
 
+/* Enlaces del pie */
 .menu-inferior a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
 }
 
-/*   DISEÑO RESPONSIVE PARA MÓVIL */
+/* ------------------ */
+/* Diseño responsive */
+/* ------------------ */
 
 @media (max-width: 768px) {
 
-.menu-superior {
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-}
+  /* Menú vertical en móvil */
+  .menu-superior {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 
-.titulo, h2, h3, h4 {
-  font-size: 22px;
-  padding: 15px;
-}
+  /* Reducimos tamaño de títulos */
+  .titulo, h2, h3, h4 {
+    font-size: 22px;
+    padding: 15px;
+  }
 
-.logo img {
-  width: 250px;
-  height: auto;
-}
+  /* Ajustar tamaño del logo */
+  .logo img {
+    width: 250px;
+    height: auto;
+  }
 
-.imagenes {
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
+  /* Imágenes una debajo de otra */
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
 
-.imagenes img {
-  width: 90%;
-  max-width: 280px;
-  height: auto;
-}
+  .imagenes img {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+  }
 
-.form-section {
-  width: 95%;
-  padding: 20px;
-}
+  /* Formulario más estrecho */
+  .form-section {
+    width: 95%;
+    padding: 20px;
+  }
 
-input, textarea {
-  font-size: 14px;
-}
+  input, textarea {
+    font-size: 14px;
+  }
 
-.menu-inferior {
-  font-size: 14px;
-}
+  .menu-inferior {
+    font-size: 14px;
+  }
 }
