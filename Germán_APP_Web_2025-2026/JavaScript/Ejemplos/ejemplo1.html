@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>Ingresa un número entre 18 y 99:</p>
+
+<input type="number" 
+       name="age" 
+       placeholder="Edad" 
+       size="3" 
+       onchange="validate(this, 18, 99, 'ahhhhhhhh');" />
+
+<script>
+function validate(obj, lowval, hival, message) {
+  if (obj.value < lowval || obj.value > hival) {
+    console.log(`¡Valor no! ${message} ${obj.value}`);
+  } else {
+    console.log(`¡Ricardo se escapa! ${message} ${obj.value}`);
+  }
+}
+
+debugger;
+
+// 'new Date()' crea una nueva instancia del objeto 'Date'
+const hoy = new Date();
+
+// 'new Array()' crea una nueva instancia de 'Array'
+const miArray = new Array('a', 'b', 'c');
+</script>
+
+</body>
+</html>
