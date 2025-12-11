@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div id="contenedor">
+  <p id="eliminar">Este será eliminado</p>
+</div>
+        
+        <script>
+            
+
+// Método 1: Fácil (recomendado)
+const elemento = document.getElementById('eliminar');
+elemento.remove(); // ¡Adiós!
+
+// Método 2: Tradicional
+const padre = elemento.parentElement;
+padre.removeChild(elemento); // También funciona
+        
+        
+        </script>
+</body>
+</html>
