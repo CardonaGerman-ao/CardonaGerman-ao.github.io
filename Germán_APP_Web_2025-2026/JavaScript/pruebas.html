@@ -6,22 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-<div id="contenedor">
-  <p id="eliminar">Este será eliminado</p>
-</div>
         
         <script>
             
 
-// Método 1: Fácil (recomendado)
-const elemento = document.getElementById('eliminar');
-elemento.remove(); // ¡Adiós!
 
-// Método 2: Tradicional
-const padre = elemento.parentElement;
-padre.removeChild(elemento); // También funciona
+const btn = document.querySelector("button");
+
+function random(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
+
+// Se puede pasar una función anónima (arrow function)
+btn.addEventListener("click", () => {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
+
+// O se puede pasar una función con nombre
+function changeBackground() {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+}
+btn.addEventListener("click", changeBackground);
         
         
         </script>
