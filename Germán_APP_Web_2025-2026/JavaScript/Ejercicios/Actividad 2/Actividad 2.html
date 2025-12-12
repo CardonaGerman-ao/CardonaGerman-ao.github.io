@@ -68,15 +68,30 @@
 <body>
 
     <div class="tarjeta-producto">
-        <img id="producto-imagen" src="https://via.placeholder.com/400x300.png/CCCCCC/FFFFFF?Text=Producto"
+        <img id="producto-imagen" src="Imagenes/teclado.jpg"
             alt="Imagen del producto">
         <h2 id="producto-titulo">Producto Genérico</h2>
         <p id="producto-precio" class="precio">0,00 €</p>
         <button id="boton-comprar">Comprar</button>
     </div>
 
-    <script src="../Actividad-2/2.2.Actividad.js">
+    <script>
         // --- EMPIEZA A ESCRIBIR TU CÓDIGO JAVASCRIPT AQUÍ ---
+        
+        document.getElementById("producto-titulo").textContent = "Increíble Teclado Mecánico";
+        const precio = document.getElementById("producto-precio");
+        precio.textContent = "99,99 €";
+
+        precio.style.color = "green";
+        precio.style.fontWeight = "bold";
+
+        document.getElementById("producto-imagen").src = "Imagenes/teclado.jpg";
+
+        const boton = document.getElementById("boton-comprar");
+        boton.addEventListener("click", function () {
+        boton.textContent = "¡Añadido al carrito!";
+        boton.disabled = true;
+        });
         
         // --- FIN DEL CÓDIGO JAVASCRIPT ---
     </script>
