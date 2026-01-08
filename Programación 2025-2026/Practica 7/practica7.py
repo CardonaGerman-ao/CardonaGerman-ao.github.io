@@ -31,12 +31,7 @@ print(", ".join(impares))
 
 # 3 - Escriure un algorisme en Python que imprimeixi els 10 primers números parells començant a 2 i imprimiu també els seus respectius cubs. Per exemple: 2 – 8; 4 – 64; 6 – 216 …
 
-i = 2
-contador = 0
-while contador < 10:
-    print(i, "-", i**3)
-    i += 2
-    contador += 1
+
 
 # A - Modifica aquest programa perquè en comptes d’imprimir els 10 primers nombres parells, imprimeixi els primers n nombres parells on n es un enter positiu introduït per teclat.
 
