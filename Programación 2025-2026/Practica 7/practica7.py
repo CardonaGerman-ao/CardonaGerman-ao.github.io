@@ -40,14 +40,6 @@ print(", ".join(impares))
 # 4 - Realitza un programa que primer, llegeixi una frase per teclat i segón, que compti el nombre de paraules que té aquesta frase. 
 # Recorda que hauràs d’utilitzar mètodes built-in de la classe String i de la clase List a més d’utilitzar el bucle for.
 
-frase = input("Introduce una frase: ")
-palabras = frase.split()
-contador = 0
-i = 0
-while i < len(palabras):
-    contador += 1
-    i += 1
-print("Número de palabras:", contador)
 
 # 5 - Escriure un programa que demani a l'usuari un número sencer i mostri per pantalla un triangle rectangle com el de més avall, 
 # d'alçada el número introduït. La imatge següent mostra l’exemple de la sortida del programa si introduïm el número 5.

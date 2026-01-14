@@ -53,13 +53,14 @@ print(cadena)
 
 cadena = input('Introduce una cadena de carácteres: ')
 resultado = ""
-for i in range(len(cadena)):
-    letra = cadena[i]
+mayuscula = True
 
-    if i % 2 == 0:
-        resultado = resultado + cadena[i].upper()
-    
+for letra in cadena:
+    if mayuscula:
+        resultado += letra.upper()
     else:
-        resultado = resultado + cadena[i].lower()
+        resultado += letra.lower()
     
-    print(f'El resultado es: {resultado}')
+    mayuscula = not mayuscula
+
+print(f'El resultado es: {resultado}')
