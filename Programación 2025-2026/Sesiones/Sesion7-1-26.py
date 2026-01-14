@@ -49,3 +49,17 @@ print()
 cadena = 'MaduroMariquita'
 print(cadena.upper())
 print(cadena)
+
+
+cadena = input('Introduce una cadena de carácteres: ')
+resultado = ""
+for i in range(len(cadena)):
+    letra = cadena[i]
+
+    if i % 2 == 0:
+        resultado = resultado + cadena[i].upper()
+    
+    else:
+        resultado = resultado + cadena[i].lower()
+    
+    print(f'El resultado es: {resultado}')
