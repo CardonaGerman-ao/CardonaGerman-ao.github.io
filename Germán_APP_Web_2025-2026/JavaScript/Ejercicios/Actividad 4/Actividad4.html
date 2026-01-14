@@ -300,12 +300,10 @@
         function esconderCajas() {
             for (let i = 0; i < cajas.length; i++) {
 
-                // Cuando el mouse entra, se esconde
                 cajas[i].addEventListener("mouseenter", function () {
                     cajas[i].style.visibility = "hidden";
                 });
 
-                // Cuando el mouse sale, vuelve a mostrarse
                 cajas[i].addEventListener("mouseleave", function () {
                     cajas[i].style.visibility = "visible";
                 });
