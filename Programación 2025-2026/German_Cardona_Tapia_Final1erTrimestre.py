@@ -73,9 +73,9 @@ while True:
 # 7 - Realitza un programa que demani a l’usuari un nombre i un caràcter d’entrada i a partir d’aquests realitzi 
 # el següent patró (exemple per a nombre = 4 y per a caràcter = #) :
 # “””
-1#
-2##2##
-3###3###3###
-4####4####4####4####
+# 1#
+# 2##2##
+# 3###3###3###
+# 4####4####4####4####
 # 1.25 punts.
 

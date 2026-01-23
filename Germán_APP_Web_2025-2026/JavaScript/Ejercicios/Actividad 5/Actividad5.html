@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+background: #111;
+/*#111111*/
+margin: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+#container {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+max-width: 100%;
+}
+
+.square {
+background-color: #1d1d1d;
+box-shadow: 0 0 2px #000;
+margin: 2px;
+width: 36px;
+height: 36px;
+transition: 1s ease;
+}
+
+.square:hover {
+transition-duration: 0s;
+}
+</style>
+</style>
+</head>
+
+<body>
+<div id="container"></div>
+
+<script>
+    generardivs();
+    function generardivs() {
+        const container = document.getElementById("container");
+
+        // Pedimos al usuario cuántos divs quiere
+        let numero = prompt("¿Cuántos divs quieres generar?");
+
+        // Validaciones básicas
+        if (numero === null || numero.trim() === "" || isNaN(numero)) {
+            alert("Debes introducir un número válido");
+            return;
+        }
+
+        numero = parseInt(numero);
+
+        // Bucle para crear los divs
+        for (let i = 0; i < numero; i++) {
+            const div = document.createElement("div");
+            div.classList.add("square");
+
+            // Color original del div
+            const colorOriginal = "#1d1d1d";
+
+            // Evento mouseover: cambia el color
+            div.addEventListener("mouseover", function () {
+                div.style.backgroundColor = generarColor();
+            });
+
+            // Evento mouseout: vuelve al color original
+            div.addEventListener("mouseout", function () {
+                div.style.backgroundColor = colorOriginal;
+            });
+
+            container.appendChild(div);
+        }
+    }
+
+    // Función para generar un color aleatorio
+    function generarColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,147 +1,58 @@
-
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica DOM Sencilla</title>
+    <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .seccion {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .boton {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin: 5px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .boton:hover {
-            background: #45a049;
-        }
-
-        .caja {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            display: inline-block;
-            border: 2px solid #333;
-            border-radius: 5px;
-        }
-
-        .ejemplo {
-            color: blue;
-            font-weight: bold;
-        }
-
-        #listaElementos {
-            list-style-type: none;
-        }
-
-        #listaElementos li {
-            padding: 8px;
-            margin: 5px 0;
-            background: #e9e9e9;
-            border-radius: 4px;
-        }
-
-        .nuevo-div {
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            text-align: center;
+        .prueba {
+          width: 100px;
+          height: 100px;
+          margin-right: 50px;
+          display: inline-block;
+          border: 1px solid black;
+          background-color: aqua;  
         }
     </style>
 </head>
-
 <body>
-    <h1>🎮 Práctica Sencilla de Manipulación DOM</h1>
 
-    <!-- Sección 1: Buscar por ID -->
-    <div class="seccion">
-        <h2>1️⃣ Buscar por ID, y realia las dos funciones.</h2>
-        <p id="textoEjemplo">Este texto será modificado cuando hagas clic.</p>
-        <button class="boton" onclick="cambiarTexto()">Cambiar Texto</button>
-        <button class="boton" onclick="restaurarTexto()">Restaurar Texto</button>
-    </div>
+    <script>
 
-    <!-- Sección 2: Buscar por Clase -->
-    <div class="seccion">
-        <h2>2️⃣ Buscar por Clase, y realia las dos funciones.</h2>
-        <p class="ejemplo">Primer párrafo con clase "ejemplo"</p>
-        <p class="ejemplo">Segundo párrafo con clase "ejemplo"</p>
-        <p class="ejemplo">Tercer párrafo con clase "ejemplo"</p>
-        <button class="boton" onclick="cambiarColorClases()">Cambiar Color</button>
-        <button class="boton" onclick="restaurarClases()">Restaurar Color</button>
-    </div>
+    //La función cambiar color tiene que preguntarme a que div le tengo que cambiar el color, según me diga le aplicaré el estilo.
+    
 
-    <!-- Sección 3: Crear Divs con Colores Aleatorios -->
-    <div class="seccion">
-        <h2>3️⃣ Crear Divs con Colores Aleatorios.</h2>
-        <p>Cada div estará dentro del contenedor divs y tendrá un color aleatorio.</p>
-        <div id="contenedorDivs"></div>
-        <br>
-        <button class="boton" onclick="crearDiv()">Crear 1 Div</button>
-        <button class="boton" onclick="crear5Divs()">Crear 5 Divs</button>
-        <button class="boton" onclick="limpiarDivs()">Limpiar Todo</button>
-    </div>
+    function CambiarColor() {
+        const cajas = document.querySelectorAll(".prueba"); //NodeList
+        let div = parseInt(prompt("¿A que div quieres cambiar el color entre el 1 y el" + cajas.lenght));
+        if(div === "") {
+            alert("No puede estar vacío");
+            CambiarColor()
+        } else if (isNaN(div)) {
+            alert("Tiene que ser un valor númerico");
+            CambiarColor();
+        } else if (div <= 1 && (div <= cajas.lenght)){
+            cajas[div - 1].style.backgroundColor = generarColorAleatorio();
+        } else {
+            alert("El número tiene que estar entre el 1 y el" + cajas.lenght);
+            cambiarColor();
+        }
+    }
 
-    <!-- Sección 4: Modificar Lista -->
-    <div class="seccion">
-        <h2>4️⃣ Modificar Lista</h2>
-        <ul id="listaElementos">
-            <li>Manzana 🍎</li>
-            <li>Plátano 🍌</li>
-            <li>Naranja 🍊</li>
-        </ul>
-        <input type="text" id="nuevoItem" placeholder="Escribe un nuevo elemento de lista">
-        <button class="boton" onclick="agregarItem()">Agregar elemento a la lista</button>
-        <button class="boton" onclick="eliminarUltimo()">Eliminar último elemento de la lista</button>
-    </div>
+    // Validar. 1-5 si pone un 6 tiene que darle un mensaje diciendo, estás fuera del rango.
+    // Tiene que ser un número. Parseint()
+    // No puede estar vacío.
+    function generarColorAleatorio() {
+        // Generar un color hexadecimal aleatorio
+        const letras = '0123456789ABCDEF';
+        let color = '#';
 
-    <!-- Sección 5: Cajas Interactivas -->
-    <div class="seccion">
-        <h2>5️⃣ Cajas Interactivas</h2>
-        <p>Cada caja no se eliminará, se esconderá y se mostrará dependiendo si paso por encima de la caja con el mouse o no.</p>
-        <div class="caja" id="caja1">Caja 1</div>
-        <div class="caja" id="caja2">Caja 2</div>
-        <div class="caja" id="caja3">Caja 3</div>
-        <br><br>
-        <button class="boton" onclick="cambiarCajas()">Cambiar Colores</button>
-        <button class="boton" onclick="esconderCajas()">Esconder/Mostrar</button>
-    </div>
+        for (let i = 0; i < 6; i++) {
+            color += letras[Math.floor(Math.random() * 16)];
+        }
 
-    <script src="script.js"></script>
+        return color;
+    }
+    </script>
 </body>
-
-</html> 
+</html>

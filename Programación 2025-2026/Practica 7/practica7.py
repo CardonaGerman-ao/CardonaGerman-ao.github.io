@@ -75,7 +75,20 @@ while i < veces:
 # 7 - Fes un programa que llegeixi un nombre sencer per teclat i per pantalla imprimeixi tots els nombres primers 
 # des de l’1 fins al nombre introduït.
 
-entero = input("Introduce un número entero: ")
+import math 
+
+numentrada = int(input("Introduce un número entero: "))
+esprimo = True
+primo = []
+i = 2
+while i <= int(math.sqrt(numentrada) + 1):
+    if numentrada % i == 0:
+        esprimo = False
+        break
+    elif esprimo == True:
+        primo.append(i)
+        print(primo)
+    i += 1  
 
 # A - Modifica aquest programa per a que comprovi si el nombre introduït sigui un nombre sencer, 
 # en cas contrari s’imprimirà per pantalla el missatge 
@@ -89,7 +102,75 @@ entero = input("Introduce un número entero: ")
 # Crea un programa utilitzant el bucle for que ens calculi l’interés acumulat d’aquest capital. El capital C i l'interès I 
 # s'hauran d’introduir per teclat.
 
+capital = float(input("Introduce el capital: "))
+interes = float(input("Introduce el interés: "))
+años = int(input("Introduce los años: "))
 
+for i in range(años):
+    capital = capital + (capital * interes / 100)
+
+print("El capital final es: ", capital)
 
 # 9 - Crea un programa que calculi la suma de tots els divisors (sencers) d’un nombre sencer introduït per teclat 
 # (recorda que els divisors poden ser com a molt grans fins a la meitat del nombre introduït).
+
+numero = int(input("Introduce un número entero: "))
+i = 1
+suma = 0
+
+while i <= numero // 2:
+    if numero % i == 0:
+        suma += i
+    i += 1
+
+print("La suma de los divisores es:", suma)
+
+# 10 - Crea un programa que demani un text per teclat i que la sortida sigui el text invertit. 
+# No podrás fer servir la sintaxi [::-1] per invertir aquest texte sinó que hauràs de llegir-lo caràcter a caràcter 
+# i invertir-lo amb el bucle for.
+
+texto = input("Introduce un texto: ")
+invertido = ""
+i = 0
+
+while i < len(texto):
+    invertido = texto[i] + invertido
+    i += 1
+
+print("Texto invertido:", invertido)
+
+# 11 - Imprimeix el següent patró utilitzant el bucle for, les dimensions del patró dependran d’un nombre introduït per teclat, 
+# en el cas següent es mostra el patró si el nombre introduït és el 5:
+
+n = int(input("Introduce un número: "))
+i = 1
+
+while i <= n:
+    print("*" * i)
+    i += 1
+
+# 12 - Crea un programa utilitzant el bucle for que compti el nombre de xifres que té un número sencer introduït per teclat.
+
+numero = input("Introduce un número entero: ")
+contador = 0
+i = 0
+
+while i < len(numero):
+    contador += 1
+    i += 1
+
+print("El número tiene", contador, "cifras")
+
+# 13 - Escriu un programa que pregunti quants números s'introduiran, demaneu aquests números, i mostri un missatge cada vegada 
+# que un nombre no sigui més gran que el primer nombre introduït.
+
+cantidad = int(input("¿Cuántos números vas a introducir?: "))
+
+primer_numero = int(input("Introduce el primer número: "))
+i = 1
+
+while i < cantidad:
+    numero = int(input("Introduce otro número: "))
+    if numero <= primer_numero:
+        print("El número", numero, "no es mayor que el primero")
+    i += 1
