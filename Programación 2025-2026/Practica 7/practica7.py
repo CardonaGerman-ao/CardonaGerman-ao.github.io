@@ -33,17 +33,29 @@ print(", ".join(impares))
 
 # 3 - Escriure un algorisme en Python que imprimeixi els 10 primers números parells començant a 2 i imprimiu també els seus respectius cubs. 
 # Per exemple: 2 – 8; 4 – 64; 6 – 216 …
-
-
-
 # A - Modifica aquest programa perquè en comptes d’imprimir els 10 primers nombres parells, imprimeixi els primers n nombres parells 
 # on n es un enter positiu introduït per teclat.
 
+n = int(input("Introduce un número entero positivo: "))
+contador = 0
+numero = 2
 
+while contador < n:
+    cubo = numero ** 3
+    print(numero, "-", cubo)
+    numero += 2
+    contador += 1
 
 # 4 - Realitza un programa que primer, llegeixi una frase per teclat i segón, que compti el nombre de paraules que té aquesta frase. 
 # Recorda que hauràs d’utilitzar mètodes built-in de la classe String i de la clase List a més d’utilitzar el bucle for.
 
+frase = input("Introduce una frase: ")
+palabras = frase.split()
+contador = 0
+
+for palabra in palabras:
+    contador += 1
+print("La frase tiene", contador, "palabras.")
 
 # 5 - Escriure un programa que demani a l'usuari un número sencer i mostri per pantalla un triangle rectangle com el de més avall, 
 # d'alçada el número introduït. La imatge següent mostra l’exemple de la sortida del programa si introduïm el número 5.
@@ -122,7 +134,6 @@ while i <= numero // 2:
     if numero % i == 0:
         suma += i
     i += 1
-
 print("La suma de los divisores es:", suma)
 
 # 10 - Crea un programa que demani un text per teclat i que la sortida sigui el text invertit. 
@@ -136,7 +147,6 @@ i = 0
 while i < len(texto):
     invertido = texto[i] + invertido
     i += 1
-
 print("Texto invertido:", invertido)
 
 # 11 - Imprimeix el següent patró utilitzant el bucle for, les dimensions del patró dependran d’un nombre introduït per teclat, 
@@ -158,14 +168,12 @@ i = 0
 while i < len(numero):
     contador += 1
     i += 1
-
 print("El número tiene", contador, "cifras")
 
 # 13 - Escriu un programa que pregunti quants números s'introduiran, demaneu aquests números, i mostri un missatge cada vegada 
 # que un nombre no sigui més gran que el primer nombre introduït.
 
 cantidad = int(input("¿Cuántos números vas a introducir?: "))
-
 primer_numero = int(input("Introduce el primer número: "))
 i = 1
 
